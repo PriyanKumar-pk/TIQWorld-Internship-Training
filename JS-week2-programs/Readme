@@ -1,0 +1,291 @@
+# JavaScript Week 1 Programs
+
+This repository contains beginner-level JavaScript programs completed as part of Week 1 practice. These programs cover the fundamentals of JavaScript including variables, loops, conditional statements, functions, arrays, strings, and recursion.
+
+---
+
+## Programs Included
+
+### 1. FizzBuzz
+
+**Description:**
+Print numbers from 1 to 100.
+- Multiples of 3 → Fizz
+- Multiples of 5 → Buzz
+- Multiples of both 3 and 5 → FizzBuzz
+
+**Logic:**
+- Loop from 1 to 100.
+- Check if the number is divisible by both 3 and 5.
+- If yes, print "FizzBuzz".
+- Otherwise check divisibility by 3 or 5.
+- If neither, print the number.
+
+---
+
+### 2. Palindrome Checker
+
+**Description:**
+Checks whether a given string is a palindrome.
+
+**Logic:**
+- Reverse the string using `split()`, `reverse()`, and `join()`.
+- Compare the reversed string with the original string.
+- If both are equal, it is a palindrome.
+
+Example:
+
+```
+madam → Palindrome
+hello → Not a Palindrome
+```
+
+---
+
+### 3. Factorial Using Loop
+
+**Description:**
+Calculates the factorial of a number using a `for` loop.
+
+**Logic:**
+- Initialize factorial as 1.
+- Loop from 1 to the given number.
+- Multiply each number with the factorial variable.
+- Print the final result.
+
+Example:
+
+```
+5! = 5 × 4 × 3 × 2 × 1 = 120
+```
+
+---
+
+### 4. Factorial Using Recursion
+
+**Description:**
+Calculates the factorial using recursion.
+
+**Logic:**
+- If the number is 0 or 1, return 1.
+- Otherwise return:
+
+```
+n × factorial(n-1)
+```
+
+The function keeps calling itself until it reaches the base case.
+
+---
+
+### 5. Reverse String
+
+**Description:**
+Reverses a string without using built-in reverse methods.
+
+**Logic:**
+- Start from the last character.
+- Traverse the string backwards.
+- Append each character to a new string.
+- Print the reversed string.
+
+Example:
+
+```
+JavaScript
+
+↓
+
+tpircSavaJ
+```
+
+---
+
+### 6. Count Vowels
+
+**Description:**
+Counts the number of vowels in a string.
+
+**Logic:**
+- Traverse every character.
+- Check if it exists in the vowel list.
+- Increase the counter whenever a vowel is found.
+- Print the total count.
+
+---
+
+### 7. Largest Number in an Array
+
+**Description:**
+Finds the largest element in an array.
+
+**Logic:**
+- Assume the first element is the largest.
+- Compare it with every other element.
+- If a larger number is found, update the largest variable.
+- Print the largest number.
+
+Example:
+
+```
+[10,45,7,98,34]
+
+Output
+
+98
+```
+
+---
+
+### 8. Grade Calculator
+
+**Description:**
+Calculates the student's grade based on marks.
+
+**Logic:**
+- Use an if-else ladder.
+- Check marks from highest to lowest.
+- Print the corresponding grade.
+
+Grade Criteria
+
+```
+90+ → A
+80–89 → B
+70–79 → C
+60–69 → D
+Below 60 → F
+```
+
+---
+
+### 9. Simple Calculator
+
+**Description:**
+Performs addition, subtraction, multiplication and division using a switch statement.
+
+**Logic:**
+- Store the operator (+, -, *, /).
+- Use switch-case to identify the operation.
+- Perform the calculation.
+- Display the result.
+
+---
+
+### 10. Temperature Converter
+
+**Description:**
+Converts temperatures between Celsius and Fahrenheit.
+
+**Logic:**
+
+Celsius to Fahrenheit
+
+```
+F = (C × 9/5) + 32
+```
+
+Fahrenheit to Celsius
+
+```
+C = (F − 32) × 5/9
+```
+
+Apply the appropriate formula and print the converted temperature.
+
+---
+
+### 11. Fibonacci Sequence
+
+**Description:**
+Prints the first 15 Fibonacci numbers.
+
+**Logic:**
+- Initialize the first two numbers as 0 and 1.
+- Each next number is the sum of the previous two numbers.
+- Update the values and continue until 15 numbers are printed.
+
+Example Output
+
+```
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+```
+
+---
+
+## Concepts Covered
+
+- Variables (`let`, `const`)
+- Data Types
+- Operators
+- Conditional Statements (`if`, `else`, `switch`)
+- Loops (`for`)
+- Functions
+- Recursion
+- Arrays
+- Strings
+- String Methods
+- Arithmetic Operations
+- Modulus Operator (`%`)
+- Comparison Operators
+
+---
+
+## Repository Structure
+
+```
+javascript-week1-programs/
+│
+├── 01-fizzbuzz/
+├── 02-palindrome-checker/
+├── 03-factorial-loop/
+├── 04-factorial-recursion/
+├── 05-reverse-string/
+├── 06-count-vowels/
+├── 07-largest-number/
+├── 08-grade-calculator/
+├── 09-simple-calculator/
+├── 10-temperature-converter/
+└── 11-fibonacci/
+```
+
+---
+
+## How to Run
+
+Make sure Node.js is installed.
+
+Navigate to any program folder and run:
+
+```bash
+node script.js
+```
+
+Example:
+
+```bash
+cd 01-fizzbuzz
+node script.js
+```
+
+---
+
+## Author
+
+**Priyankumar S**
+
+Week 1 JavaScript Practice – TIQWorld Internship
